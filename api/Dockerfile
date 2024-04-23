@@ -3,7 +3,7 @@ CMD [ "bash" ]
 
 # Test and build
 FROM base AS test-and-build
-COPY . ./workspace
+COPY . /workspace
 WORKDIR /workspace
 RUN ./gradlew build
 
