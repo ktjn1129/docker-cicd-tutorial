@@ -1,7 +1,7 @@
 FROM node:18 AS base
 CMD [ "bash" ]
 
-# Build
+# Test and build
 FROM base AS test-and-build
 COPY . /workspace
 WORKDIR /workspace
